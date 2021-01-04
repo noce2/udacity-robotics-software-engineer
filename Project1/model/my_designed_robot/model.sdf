@@ -210,7 +210,7 @@
         </inertia>
         <pose>0 0 0 0 -0 0</pose>
       </inertial>
-      <pose>-0.008333 0.086667 0.108333 -0.000117 1.57 1.56987</pose>
+      <pose>-0.008333 0.086667 0.108333 -0.000236 1.57 1.56975</pose>
       <gravity>1</gravity>
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
@@ -310,7 +310,7 @@
         </inertia>
         <pose>0 0 0 0 -0 0</pose>
       </inertial>
-      <pose>-0.008333 -0.17 0.108333 -0.000117 1.57 1.56987</pose>
+      <pose>-0.008333 -0.17 0.108333 -0.000236 1.57 1.56975</pose>
       <gravity>1</gravity>
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
@@ -397,6 +397,23 @@
         </surface>
       </collision>
     </link>
+    <joint name='link_0_JOINT_0_0' type='fixed'>
+      <parent>link_0</parent>
+      <child>link_1</child>
+      <pose>0 0 0 0 -0 0</pose>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
     <joint name='link_0_JOINT_0' type='revolute'>
       <parent>link_0</parent>
       <child>link_2_clone</child>
@@ -445,6 +462,7 @@
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
           <damping>0</damping>
+          <friction>0</friction>
         </dynamics>
       </axis>
       <physics>
