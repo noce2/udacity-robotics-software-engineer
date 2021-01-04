@@ -210,7 +210,7 @@
         </inertia>
         <pose>0 0 0 0 -0 0</pose>
       </inertial>
-      <pose>-0.008333 0.086667 0.108333 -0.000236 1.57 1.56975</pose>
+      <pose>-0.008333 0.086667 0.108333 -0.000226 1.57 1.56976</pose>
       <gravity>1</gravity>
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
@@ -310,7 +310,7 @@
         </inertia>
         <pose>0 0 0 0 -0 0</pose>
       </inertial>
-      <pose>-0.008333 -0.17 0.108333 -0.000236 1.57 1.56975</pose>
+      <pose>-0.008333 -0.17 0.108333 -0.000226 1.57 1.56976</pose>
       <gravity>1</gravity>
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
@@ -397,7 +397,7 @@
         </surface>
       </collision>
     </link>
-    <joint name='link_0_JOINT_0_0' type='fixed'>
+    <joint name='link_0_JOINT_0_0' type='ball'>
       <parent>link_0</parent>
       <child>link_1</child>
       <pose>0 0 0 0 -0 0</pose>
